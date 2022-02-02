@@ -9,7 +9,7 @@ import MenuIcon from "@mui/icons-material/Menu";
 import Container from "@mui/material/Container";
 
 import Button from "@mui/material/Button";
-import ShoppingBagIcon from "@mui/icons-material/ShoppingBag";
+import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import MenuItem from "@mui/material/MenuItem";
 import Logo from "../images/logo-g9a3ac6b18_640.png";
 import { Link } from "react-router-dom";
@@ -191,7 +191,7 @@ const Navbar = () => {
                     color="error"
                     sx={{ color: "white" }}
                   >
-                    <ShoppingBagIcon sx={{ color: "white" }} />
+                    <ShoppingCartIcon sx={{ color: "white" }} />
                   </Badge>
                 </IconButton>
               </Link>

@@ -19,6 +19,7 @@ const reducer = (state, action) => {
 
 const AdminProvider = (props) => {
   const [state, dispatch] = useReducer(reducer, INIT_STATE);
+
   const getBooks = async () => {
     try {
       const response = await axios(API);

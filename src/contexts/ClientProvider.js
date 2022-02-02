@@ -6,12 +6,13 @@ import { API } from "../helpers/const";
 export const ClientContext = createContext();
 
 let cart = JSON.parse(localStorage.getItem("cart"));
+let favorite = JSON.parse(localStorage.getItem("favorite"));
 
 const INIT_STATE = {
   books: null,
   detail: null,
-  favorite: null,
   booksCount: cart ? cart?.books?.length : 0,
+  favoriteCount: favorite ? favorite?.books?.length : 0,
 };
 
 const reducer = (state, action) => {
@@ -20,12 +21,16 @@ const reducer = (state, action) => {
       return { ...state, books: action.payload };
     case "GET_BOOK_DETAIL":
       return { ...state, detail: action.payload };
-    case "GET_BOOK_FAVORITE":
-      return { ...state, favorite: action.payload };
+
     case "ADD_AND_DELETE_BOOK_IN_CART":
       return { ...state, booksCount: action.payload };
     case "GET_CART":
       return { ...state, cart: action.payload };
+    case "ADD_AND_DELETE_BOOK_IN_FAVORITE":
+      return { ...state };
+    case "GET_FAVORITE":
+      return { ...state, favorite: action.payload };
+
     default:
       return state;
   }
@@ -59,19 +64,6 @@ const ClientProvider = (props) => {
       console.log(error);
     }
   };
-
-  // const getBookFavorite = async (id) => {
-  //   try {
-  //     const response = await axios(`${API}/${id}`);
-  //     let action = {
-  //       type: "GET_BOOK_FAVORITE",
-  //       payload: response.data,
-  //     };
-  //     dispatch(action);
-  //   } catch (error) {
-  //     console.log(error);
-  //   }
-  // };
 
   // // ! CART (Корзина)
 
@@ -188,6 +180,7 @@ const ClientProvider = (props) => {
 
     let favoriteBook = {
       book: book,
+      // count: 1,
     };
 
     let check = favorite.books.find((item) => {
@@ -243,38 +236,38 @@ const ClientProvider = (props) => {
     dispatch(action);
   }
 
-  function changeCountCartFavorite(value, id) {
-    // console.log(value, id);
-    let favorite = JSON.parse(localStorage.getItem("favorite"));
-    favorite.books = favorite.books.map((item) => {
-      if (item.book.id === id) {
-      }
-      return item;
-    });
-    localStorage.setItem("favorite", JSON.stringify(favorite));
-    getFavorite();
-  }
+  // function changeCountCartFavorite(value, id) {
+  //   // console.log(value, id);
+  //   let favorite = JSON.parse(localStorage.getItem("favorite"));
+  //   favorite.books = favorite.books.map((item) => {
+  //     if (item.book.id === id) {
+  //       item.count = value;
+  //     }
+  //     return item;
+  //   });
+  //   localStorage.setItem("favorite", JSON.stringify(favorite));
+  //   getFavorite();
+  // }
 
-  function deleteBookInFavorite(id) {
-    let favorite = JSON.parse(localStorage.getItem("favorite"));
-    favorite.books = favorite.books.filter((item) => {
-      return item.book.id !== id;
-    });
-    favorite.totalPrice = calcTotalPrice(favorite.books);
-    localStorage.setItem("favorite", JSON.stringify(favorite));
-    getCart();
-    let action = {
-      type: "ADD_AND_DELETE_BOOK_IN_FAVORITE",
-      payload: favorite.books.length,
-    };
-    dispatch(action);
-  }
+  // function deleteBookInFavorite(id) {
+  //   let favorite = JSON.parse(localStorage.getItem("favorite"));
+  //   favorite.books = favorite.books.filter((item) => {
+  //     return item.book.id !== id;
+  //   });
+  //   localStorage.setItem("favorite", JSON.stringify(favorite));
+  //   getFavorite();
+  //   let action = {
+  //     type: "ADD_AND_DELETE_BOOK_IN_FAVORITE",
+  //     payload: favorite.books.length,
+  //   };
+  //   dispatch(action);
+  // }
 
   //! Pagination
 
   const [posts, setPosts] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
-  const postPerPage = 9;
+  const postPerPage = 3;
 
   useEffect(() => {
     if (state.books) {
@@ -301,11 +294,12 @@ const ClientProvider = (props) => {
         addAndDeleteBookInFavorite: addAndDeleteBookInFavorite,
         checkBookInFavorite: checkBookInFavorite,
         getFavorite: getFavorite,
-        changeCountCartFavorite: changeCountCartFavorite,
-        deleteBookInFavorite: deleteBookInFavorite,
+        // changeCountCartFavorite: changeCountCartFavorite,
+        // deleteBookInFavorite: deleteBookInFavorite,
 
         detail: state.detail,
         favorite: state.favorite,
+        favoriteCount: state.favoriteCount,
         booksCount: state.booksCount,
         cart: state.cart,
         // books: state.books,

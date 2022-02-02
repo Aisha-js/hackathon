@@ -8,18 +8,19 @@ const HomePage = () => {
     <div className="wrap">
       <img className="sea" src={Img} alt="" />
       <h1 className="texthome">
-        MyBooks - читайте книги <br />
-        по одной подписке
+        MyBooks - интернет магазин <br />
+        книг. Lorem ipsum dolor elit. Voluptatum, vero ad. Animi hic possimus
+        voluptates in!
       </h1>
 
       <img className="logo" src={Img2} alt="" />
 
       <Link to="/books">
         <button
-          className="button btn-outline-dark"
+          className="button btn-outline-primary"
           style={{ position: "absolute", zIndex: 5 }}
         >
-          Читать сейчас
+          Купить сейчас
         </button>
       </Link>
     </div>

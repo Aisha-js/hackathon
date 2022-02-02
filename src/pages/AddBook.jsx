@@ -106,13 +106,12 @@ const AddBook = () => {
               <TextField
                 onChange={handleInput}
                 fullWidth
-                name="
-                description"
-                label="
-                Description"
+                name="description"
+                label="Description"
                 variant="standard"
                 value={newBook.description}
               />
+
               <TextField
                 onChange={handleInput}
                 fullWidth

@@ -11,7 +11,6 @@ import ClientProvider from "./contexts/ClientProvider";
 import BooksPage from "./pages/BooksPage";
 import Authprovider from "./contexts/Authprovider";
 import FavoritePage from "./pages/FavoritePage";
-import OrderForm from "./components/OrderForm";
 import Footer from "./components/Footer";
 
 const MyRoutes = () => {
@@ -27,7 +26,6 @@ const MyRoutes = () => {
               <Route path="/" element={<HomePage />} />
               <Route path="/books/:id" element={<BooksDetail />} />
               <Route path="/cart" element={<CartPage />} />
-              <Route path="/orderform/" element={<OrderForm />} />
               <Route path="/books" element={<BooksPage />} />
               <Route path="/favorite" element={<FavoritePage />} />
             </Routes>

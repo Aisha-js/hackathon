@@ -24,7 +24,6 @@ const AllBooks = () => {
             </Grid>
           ))}
         </Grid>
-        {/* <BookCard /> */}
       </div>
     </div>
   );

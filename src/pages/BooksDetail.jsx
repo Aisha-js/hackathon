@@ -5,8 +5,7 @@ import { ClientContext } from "../contexts/ClientProvider";
 
 const BookDetail = () => {
   const params = useParams();
-  const { getBookDetail, detail, addAndDeleteBookInCart, checkBookInCart } =
-    useContext(ClientContext);
+  const { getBookDetail, detail } = useContext(ClientContext);
   useEffect(() => {
     getBookDetail(params.id);
   }, []);
@@ -67,23 +66,6 @@ const BookDetail = () => {
               >
                 {detail.description}
               </Typography>
-
-              {/* {checkBookInCart(detail.id) ? (
-                <Button
-                  onClick={() => addAndDeleteBookInCart(detail)}
-                  variant="outlined"
-                  color="error"
-                >
-                  В корзинe
-                </Button>
-              ) : (
-                <Button
-                  onClick={() => addAndDeleteBookInCart(detail)}
-                  variant="outlined"
-                >
-                  В корзину
-                </Button>
-              )} */}
             </div>
           </Grid>
         </Grid>

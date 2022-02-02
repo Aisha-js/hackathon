@@ -1,11 +1,13 @@
 import React, { useContext, useEffect } from "react";
+import { useParams } from "react-router-dom";
 import FavoriteBooks from "../components/FavoriteBooks";
 import { ClientContext } from "../contexts/ClientProvider";
 
 const FavoritePage = () => {
+  const params = useParams();
   const { getFavorite, favorite } = useContext(ClientContext);
   useEffect(() => {
-    getFavorite();
+    getFavorite(params.id);
   }, []);
   console.log(favorite);
   if (!favorite) {

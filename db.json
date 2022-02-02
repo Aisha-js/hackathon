@@ -2,23 +2,43 @@
   "books": [
     {
       "image": "https://images.squarespace-cdn.com/content/v1/5fce42829c32423a38e6fdc3/1616619503673-K5I3KKP1LZJJO79PH2L0/still+with+me+ebook.png?format=750w",
-      "title": "a",
-      "author": "a",
-      "releaseDate": "2022-01-06",
-      "description": "adfghjk,fg hjkl.;l,kmjnh bgvffg hjkmj hgfghjkd fgh jk,fghjkl.;l,kmjnhbgvffghjkm jhgf ghjkdfghjk ,fghjkl.;l,kmjnh bgvffghjkmjh gfghjkdfghjk ,fghjkl.;l,km jnhb gvffg hjkm jhgfghjkdfg hjk,fghjkl.;l,kmjn hbgvffghjkmjhgfghjkdf ghjk,fghjkl.;l,k mjnhbgvffghj k mjhgfghjkdfghjk,  fghjkl.;l, kmjnhbg vffgh jkmjhgfg hjkdfghjk,fghjkl. ;l,kmjnhbgvffgh jkmjhgfghjkdfgh jk,fghjkl.;l ,kmjnhbgvffg hjkmjhgfghjk",
-      "genre": "as",
-      "price": 56,
+      "title": "Still With Me",
+      "author": "Jessica Cunsolo",
+      "releaseDate": "2022-02-01",
+      "description": "Love has never been easy for Amelia Collins and Aiden Parker. They’ve faced every imaginable challenge: car wrecks, stalker attacks, evil fathers, wicked rivals, falling for each other, and finally giving in to their feelings.   So it’s no surprise that just as Aiden and Amelia begin to plan their future, a new threat emerges that could destroy everything. As Amelia once again attempts to protect those she loves, she inadvertently leaves a trail of clues behind, and her stalker is hot on her trail.  Faced with an impossible choice between love and survival, Amelia and Aiden’s devotion to each other is tested like never before. But it may be no match for a cold-blooded killer.  The thrilling finale in the With Me series is sure to take your breath away...  Book 3 in the With Me series.",
+      "genre": "Romance",
+      "price": 590,
+      "id": 1
+    },
+    {
+      "image": "https://images.squarespace-cdn.com/content/v1/5fce42829c32423a38e6fdc3/1612881289157-WGBXOBG3YHY3DN26AK9I/Homewrecker_E-Book_1300x790px.png?format=750w",
+      "title": "Homewrecker",
+      "author": "D. Cameron",
+      "releaseDate": "2022-02-02",
+      "description": "Bronwyn’s mother is late. Again. Sitting on the edge of the sidewalk, waiting, Bronwyn figures she’s flaked out again. She’s always flaking out. Stomping home ready for a fight, Bronwyn is met by a cataclysmic tornado heading directly toward their run-down trailer. Bronwyn barely escapes with her life. Her mother isn’t as lucky.   Enter Senator Soliday, a.k.a. Bronwyn’s estranged father, who shows up at the hospital and takes her home with him, to a family she’s never been a part of, to people who have proved again and again they don’t want her. Confused, resentful, absolutely raging, Bronwyn enters a world she’s never been privy to, while reeling from the news that her mother wasn’t killed by the tornado but murdered.   Torn between two identities: the daughter of a single drug addict and the middle child of a well-respected senator, Bronwyn is forced to navigate through this new, unfamiliar life alone and with a gut feeling she can’t shake.   Her mother’s killer isn’t unfamiliar.",
+      "genre": "Thriller",
+      "price": 160,
       "id": 2
     },
     {
-      "image": "qwerty",
-      "title": "qwert",
-      "author": "qwerty",
-      "releaseDate": "2022-01-28",
-      "description": "qwerty",
-      "genre": "a",
-      "price": 5000,
+      "image": "https://images.squarespace-cdn.com/content/v1/5fce42829c32423a38e6fdc3/1612878388743-T7M7IZFF3Y4R7UB48OEZ/Swallow_E-Book_1300x790px.png?format=750w",
+      "title": "Swallow",
+      "author": "Sam Schill",
+      "releaseDate": "2022-02-03",
+      "description": "The students at Roanoke High School have created a soundtrack that runs constantly in Mildred Waco’s mind...   Change your hair, Mildred.   Change your face, Mildred.   Change your body, Mildred.   Everyone hates you, Mildred.   Are you really going to wear that, Mildred?   The stares, the snickers, the constant teasing—combined with Mildred’s own self-doubt and absentee parents—takes its toll. Stumbling upon the Crossroads Magicks shop, Mildred decides she will no longer simply endure the bullying and skeptically buys a revenge curse.   But when she begins to lose control and Roanoke students are found brutally murdered, Mildred realizes that she may have bought more than she bargained for. With time running out, Mildred will have to stop the terrible forces she’s unleashed or lose her soul forever.",
+      "genre": "Fantasy",
+      "price": 100,
       "id": 3
+    },
+    {
+      "image": "https://images.squarespace-cdn.com/content/v1/5fce42829c32423a38e6fdc3/1643737891828-8F1817ZDW1V6X4IAOSTI/blackoutt_E-Book_1300x790px.png?format=750w",
+      "title": "Blackouttttt",
+      "author": "K. Monroe",
+      "releaseDate": "2022-02-04",
+      "description": "When Allie Castillo wakes up after a terrible car accident, with head injuries and zero recollection of who she is or what happened, one thing haunts the edges of her mind: the crash may not have been an accident.  Her body still bruised, she returns to a life she doesn’t recall, to a house that’s unfamiliar, and to a family that doesn’t feel like her own. School is another minefield―her boyfriend wants his girl back, her best friend wants to carry on their old partying ways, and the mysterious guy at the back of the classroom wants nothing more than to unlock the door to her forgotten memories.  As Allie learns about her notorious past, she grows to dislike who she was pre-accident. She’s determined to change, determined not to repeat the same mistakes. But when her life is put in jeopardy once more, Allie realizes that her only chance at survival is to remember who she used to be―even if that means abandoning who she wants to become.",
+      "genre": "Mystery",
+      "price": 150,
+      "id": 4
     }
   ]
 }
